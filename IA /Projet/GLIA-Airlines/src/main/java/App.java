@@ -6,7 +6,7 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 
-
+// /Users/lololemono/.m2/repository/org/choco-solver/choco-solver/4.0.5
 
 public class App 
 {
@@ -33,7 +33,7 @@ public class App
 			checkOption(line, opt.getLongOpt());
 		}
 
-		new GLIAAirlines().solve(inst, timeout, allSolutions);
+		new GLIAAirlines().solve(inst, timeout, true);
 	}
 	
 	
