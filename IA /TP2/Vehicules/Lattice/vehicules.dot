@@ -1,0 +1,34 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,fillcolor=lightblue,label="{0 (I: 1, E: 10)|automatic\n|}"];
+1 [shape=record,style=filled,label="{1 (I: 2, E: 2)|compact\n|Volkswagen-Golf\n}"];
+2 [shape=record,style=filled,fillcolor=lightblue,label="{2 (I: 11, E: 0)|propulsion\ntraction\nfour-wheel-drive\n|}"];
+3 [shape=record,style=filled,label="{3 (I: 2, E: 2)|sport\n|Porsche-911\n}"];
+4 [shape=record,style=filled,label="{4 (I: 2, E: 3)|suv\n|Honda-CR-V\n}"];
+5 [shape=record,style=filled,label="{5 (I: 4, E: 1)|off-road\n|Land-Rover-Defender\n}"];
+6 [shape=record,style=filled,label="{6 (I: 2, E: 2)|electric\n|Tesla-Model-3\n}"];
+7 [shape=record,style=filled,fillcolor=orange,label="{7 (I: 2, E: 2)|hybrid\n|Toyota-Prius\nToyota-Rav4-Hybrid\n}"];
+8 [shape=record,style=filled,label="{8 (I: 3, E: 1)||Toyota-Corolla\n}"];
+9 [shape=record,style=filled,label="{9 (I: 3, E: 1)||Ford-Mustang\n}"];
+10 [shape=record,style=filled,label="{10 (I: 3, E: 1)||Jeep-Wrangler\n}"];
+11 [shape=record,style=filled,fillcolor=lightblue,label="{11 (I: 2, E: 3)|essence\n|}"];
+	1 -> 0
+	2 -> 5
+	2 -> 7
+	2 -> 8
+	2 -> 9
+	2 -> 10
+	3 -> 0
+	4 -> 0
+	5 -> 4
+	5 -> 6
+	6 -> 0
+	7 -> 0
+	8 -> 1
+	8 -> 11
+	9 -> 3
+	9 -> 11
+	10 -> 4
+	10 -> 11
+	11 -> 0
+}

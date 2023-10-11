@@ -1,0 +1,2 @@
+- java -jar fca4j-cli-0.4.4.jar LATTICE Vehicules/vehicules.csv -i CSV -s SEMICOLON -g Vehicules/Lattice/vehicules.dot
+- dot -Tpdf Vehicules/Lattice/vehicules.dot -o Vehicules/Lattice/vehicules.pdf

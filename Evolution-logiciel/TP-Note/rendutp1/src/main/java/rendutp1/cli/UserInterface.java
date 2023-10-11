@@ -23,7 +23,6 @@ public class UserInterface {
 		add("Les 10% de(s) méthode(s) qui ont le plus grand nombre de ligne(s)");
 		add("Le nombre maximal de paramètre(s) entre toutes les méthodes de l'application ");
 		add("Arreter l'application");
-		
 	}};
 	
 	public UserInterface() {

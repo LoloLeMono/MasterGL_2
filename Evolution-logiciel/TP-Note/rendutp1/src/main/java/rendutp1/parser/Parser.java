@@ -123,7 +123,7 @@ public class Parser {
 		case 0:
 			parseFilesClass(visitorClass, javaFiles);
 			parseFilesMethod(visitorMethod, javaFiles);
-			printCallGraph(visitorClass, visitorMethodInv);
+			printCallGraph(visitorClass);
 			break;
 		
 		case 1:
@@ -294,7 +294,7 @@ public class Parser {
 		}
 	}
 	
-	public static void printCallGraph(TypeDeclarationVisitor visitorClass, MethodInvocationVisitor visitorMethodInv) throws IOException {
+	public static void printCallGraph(TypeDeclarationVisitor visitorClass) throws IOException {
 		List<Node> listNode = new ArrayList<Node>();
 		List<Edge> listEdge = new ArrayList<Edge>();
 		
@@ -310,7 +310,7 @@ public class Parser {
 				
 				
 				if (visitor2.getMethods().size() != 0) {
-//					System.out.println("\nMethod : " + nodeMethodDecla.getNode());
+					//System.out.println("\nMethod : " + nodeMethodDecla.getNode());
 
 					for (MethodInvocation methodInvocation : visitor2.getMethods()) {
 						
@@ -335,6 +335,7 @@ public class Parser {
 				}
 			}
 		}
+		
 		// Add vertex and edges to the graph
 		Graph<String, DefaultEdge> graph = new DefaultDirectedGraph<String, DefaultEdge>(DefaultEdge.class);
 		for (Node node : listNode) {
@@ -357,8 +358,7 @@ public class Parser {
 	        exporter.exportGraph(graph, writer);
 	        exporter.exportGraph(graph, new File("example/callGraph.dot")); // To DOT File
 	        MutableGraph g = new guru.nidi.graphviz.parse.Parser().read(writer.toString());
-	        Graphviz.fromGraph(g).height(1000).render(Format.PNG).toFile(new File("example/callGraph.png"));
-//	        System.out.println(writer.toString());
-	        
+	        //Graphviz.fromGraph(g).height(1000).render(Format.PNG).toFile(new File("example/callGraph.png"));
+	        System.out.println(writer.toString());
 	}	
 }
