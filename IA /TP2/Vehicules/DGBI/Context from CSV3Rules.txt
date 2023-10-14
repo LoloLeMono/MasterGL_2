@@ -1,0 +1,3 @@
+<3> automatique => électrique
+<3> électrique => automatique
+<3> sport => propulsion

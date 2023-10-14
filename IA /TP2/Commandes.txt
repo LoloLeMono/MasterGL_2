@@ -1,2 +1,40 @@
-- java -jar fca4j-cli-0.4.4.jar LATTICE Vehicules/vehicules.csv -i CSV -s SEMICOLON -g Vehicules/Lattice/vehicules.dot
-- dot -Tpdf Vehicules/Lattice/vehicules.dot -o Vehicules/Lattice/vehicules.pdf
+Animals11
+
+Build Lattice :
+- java -jar fca4j-cli.jar LATTICE Vehicules/Vehicules.csv -i CSV -s SEMICOLON -g Vehicules/Lattice/Vehicules.dot
+- dot -Tpdf Vehicules/Lattice/Vehicules.dot -o Vehicules/Lattice/Vehicules.pdf
+
+Build Iceberg50 :
+- java -jar fca4j-cli.jar LATTICE -a ICEBERG Vehicules/Vehicules.csv -p 50 -i CSV -s SEMICOLON -g Vehicules/Iceberg50/Vehiculesiceberg.dot
+- dot -Tpdf Vehicules/Iceberg50/Vehiculesiceberg.dot -o Vehicules/Iceberg50/Vehiculesiceberg50.pdf
+
+Build AOCposet :
+- java -jar fca4j-cli.jar AOCPOSET Vehicules/Vehicules.csv -i CSV -s SEMICOLON -g Vehicules/AOCposet/Vehiculesaocposet.dot
+- dot -Tpdf Vehicules/AOCposet/Vehiculesaocposet.dot -o Vehicules/AOCposet/AOCposet.pdf
+
+Compute the Duquennes-Guigues basis of Implications (DGBI) :
+- java -jar fca4j-cli.jar RULEBASIS Vehicules/Vehicules.csv -i CSV -s SEMICOLON -folder ./Vehicules/DGBI/
+
+Compute the irreducible objects :
+- java -jar fca4j-cli.jar IRREDUCIBLE Vehicules/Vehicules.csv -lobj -u -i CSV -s SEMICOLON Vehicules/Vehiculesirrobjs.txt
+
+Compute the irreducible objects attributes :
+- java -jar fca4j-cli.jar IRREDUCIBLE Vehicules/Vehicules.csv -lattr -u -i CSV -s SEMICOLON Vehicules/Vehiculesirrattrs.txt
+
+Clarify the formal context along objects and attributes :
+- java -jar fca4j-cli.jar CLARIFY Vehicules/Vehicules.csv -xa -xo -i CSV -s SEMICOLON Vehicules/Vehiculesclarified.csv
+
+Reduce the formal context :
+- java -jar fca4j-cli.jar REDUCE Vehicules/Vehicules.csv -xa -xo -u -i CSV -s SEMICOLON Vehicules/Vehiculesclarifiedreduced.csv
+
+Build le clarifiedreduced avec LATTICE :
+- java -jar fca4j-cli.jar LATTICE Vehicules/Vehiculesclarifiedreduced.csv -i CSV -s SEMICOLON -g Vehicules/Reduced/Lattice/Vehiculesclarifiedreduced.dot
+- dot -Tpdf Vehicules/Reduced/Lattice/Vehiculesclarifiedreduced.dot -o Vehicules/Reduced/Lattice/Vehiculesclarifiedreduced.pdf
+
+Build le clarifiedreduced avec AOCposet :
+- java -jar fca4j-cli.jar AOCPOSET Vehicules/Vehiculesclarifiedreduced.csv -i CSV -s SEMICOLON -g Vehicules/Reduced/AOCposet/Vehiculesclarifiedreduced.dot
+- dot -Tpdf Vehicules/Reduced/AOCposet/Vehiculesclarifiedreduced.dot -o Vehicules/Reduced/AOCposet/Vehiculesclarifiedreduced.pdf
+
+Create FAMILY :
+- java -jar  fca4j-cli.jar family Vehicules/JSON/VehiculesRCFT.rcft -a IMPORT Vehicules/Vehicules.csv -n vehicules -x CSV -s SEMICOLON
+- java -jar fca4j-cli.jar RCA Vehicules/JSON/VehiculesRCFT.rcft Vehicules/JSON [options]

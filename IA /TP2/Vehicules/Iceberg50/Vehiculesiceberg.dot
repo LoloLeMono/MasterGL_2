@@ -1,0 +1,10 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,label="{0 (I: 0, E: 10)||Tesla-Model-3\n}"];
+1 [shape=record,style=filled,fillcolor=lightblue,label="{1 (I: 12, E: 0)|compact\nsport\nSUV\nautopilot\nhybride\nélectrique\nautomatique\ntraction\nquatre-roues-motrices\npropulsion\n|}"];
+2 [shape=record,style=filled,fillcolor=orange,label="{2 (I: 1, E: 9)|essence\n|Toyota-Prius\nToyota-Rav4-Hybrid\n}"];
+3 [shape=record,style=filled,fillcolor=orange,label="{3 (I: 2, E: 7)|manuel\n|Toyota-Corolla\nFord-Mustang\nHonda-CR-V\nVolkswagen-Golf\nPorsche-911\nJeep-Wrangler\nLand-Rover-Defender\n}"];
+	1 -> 3
+	2 -> 0
+	3 -> 2
+}

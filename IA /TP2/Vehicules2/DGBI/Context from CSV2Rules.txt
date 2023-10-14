@@ -1,0 +1,4 @@
+<2> four-wheel-drive => suv,essence,manual
+<2> essence,manual,propulsion => sport
+<2> hybrid => automatic
+<2> suv,essence,manual => four-wheel-drive

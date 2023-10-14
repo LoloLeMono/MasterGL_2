@@ -1,0 +1,4 @@
+<1> hybride,essence,électrique,automatique,propulsion => SUV
+<1> autopilot => sport,électrique,automatique,propulsion
+<1> SUV => hybride,essence,électrique,automatique,propulsion
+<1> sport,électrique,automatique,propulsion => autopilot

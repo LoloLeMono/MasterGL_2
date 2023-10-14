@@ -1,0 +1,11 @@
+;compact;sport;suv;autopilot;hybrid;essence;electric;automatic;manual;traction;four-wheel-drive;propulsion
+toyota-corolla;1;0;0;0;0;1;0;0;1;1;0;0
+ford-mustang;0;1;0;0;0;1;0;0;1;0;0;1
+honda-cr-v;1;0;0;0;0;1;0;0;1;1;0;0
+tesla-model-3;0;1;0;1;0;0;1;1;0;0;0;1
+toyota-prius;1;0;0;0;1;0;0;1;0;1;0;0
+volkswagen-golf;1;0;0;0;0;1;0;0;1;1;0;0
+porsche-911;0;1;0;0;0;1;0;0;1;0;0;1
+jeep-wrangler;0;0;1;0;0;1;0;0;1;0;1;0
+toyota-rav4-hybrid;0;0;1;0;1;0;0;1;0;0;0;1
+land-rover-defender;0;0;1;0;0;1;0;0;1;0;1;0

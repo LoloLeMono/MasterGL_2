@@ -1,0 +1,2 @@
+<4> traction => compact,essence
+<4> compact => essence,traction

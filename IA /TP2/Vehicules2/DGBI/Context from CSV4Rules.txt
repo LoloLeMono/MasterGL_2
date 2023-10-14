@@ -1,0 +1,2 @@
+<4> traction => compact
+<4> compact => traction

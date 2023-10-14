@@ -1,0 +1,35 @@
+digraph G { 
+	rankdir=BT;
+subgraph vehicules { 
+label="vehicules";
+14 [shape=record,label="{Concept_vehicules_14|compact\ntraction\n|}"];
+15 [shape=record,label="{Concept_vehicules_15|sport\n|}"];
+16 [shape=record,label="{Concept_vehicules_16|suv\n|toyota-rav4-hybrid\n}"];
+17 [shape=record,label="{Concept_vehicules_17|autopilot\n|tesla-model-3\n}"];
+18 [shape=record,label="{Concept_vehicules_18||toyota-prius\n}"];
+19 [shape=record,label="{Concept_vehicules_19|hybrid\n|}"];
+20 [shape=record,label="{Concept_vehicules_20||ford-mustang\nporsche-911\n}"];
+21 [shape=record,label="{Concept_vehicules_21|essence\n|}"];
+22 [shape=record,label="{Concept_vehicules_22|electric\nautomatic\n|}"];
+23 [shape=record,label="{Concept_vehicules_23||toyota-corolla\nhonda-cr-v\ngolkswagen-golf\n}"];
+24 [shape=record,label="{Concept_vehicules_24|manual\n|}"];
+25 [shape=record,label="{Concept_vehicules_25|four-wheel-drive\n|jeep-wrangler\nland-rover-defender\n}"];
+26 [shape=record,label="{Concept_vehicules_26|propulsion\n|}"];
+	18 -> 14
+	23 -> 14
+	17 -> 15
+	20 -> 15
+	16 -> 19
+	18 -> 19
+	14 -> 21
+	19 -> 21
+	24 -> 21
+	17 -> 22
+	19 -> 22
+	20 -> 24
+	23 -> 24
+	25 -> 24
+	15 -> 26
+	16 -> 26
+}
+}

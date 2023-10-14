@@ -1,0 +1,8 @@
+digraph G { 
+	rankdir=BT;
+0 [shape=record,style=filled,fillcolor=orange,label="{0 (I: 0, E: 10)||tesla-model-3\ntoyota-prius\ntoyota-rav4-hybrid\n}"];
+1 [shape=record,style=filled,fillcolor=lightblue,label="{1 (I: 12, E: 0)|compact\nsport\nsuv\nautopilot\nhybrid\nelectric\nautomatic\ntraction\nfour-wheel-drive\npropulsion\n|}"];
+2 [shape=record,style=filled,fillcolor=orange,label="{2 (I: 2, E: 7)|essence\nmanual\n|toyota-corolla\nford-mustang\nhonda-cr-v\nvolkswagen-golf\nporsche-911\njeep-wrangler\nland-rover-defender\n}"];
+	1 -> 2
+	2 -> 0
+}

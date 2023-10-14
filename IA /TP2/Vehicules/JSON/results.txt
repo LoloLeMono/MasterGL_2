@@ -1,0 +1,5 @@
+vehicules: step=1 nb.concepts=13 nb.attrib rel.=0
+time:33 ms
+vehicules: step=2 nb.concepts=13 nb.attrib rel.=0
+time:3 ms
+total time: 65

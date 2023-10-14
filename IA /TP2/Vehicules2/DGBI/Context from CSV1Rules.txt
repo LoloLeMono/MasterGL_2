@@ -1,0 +1,7 @@
+<1> electric => sport,autopilot,automatic,propulsion
+<1> hybrid,automatic,propulsion => suv
+<1> autopilot => sport,electric,automatic,propulsion
+<1> suv,propulsion => hybrid,automatic
+<1> suv,automatic => hybrid,propulsion
+<1> sport,automatic,propulsion => autopilot,electric
+<1> compact,automatic,traction => hybrid

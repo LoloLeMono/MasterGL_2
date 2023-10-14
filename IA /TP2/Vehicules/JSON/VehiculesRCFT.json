@@ -1,0 +1,193 @@
+[
+{
+"attributes": {
+"essence": "essence"
+},
+"children": [
+14,
+19,
+24
+],
+"context": "vehicules",
+"id": 21,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"propulsion": "propulsion"
+},
+"children": [
+15,
+16
+],
+"context": "vehicules",
+"id": 26,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"automatic": "automatic",
+"electric": "electric"
+},
+"children": [
+17,
+19
+],
+"context": "vehicules",
+"id": 22,
+"objects": [],
+"parents": []
+},
+{
+"attributes": {
+"manual": "manual"
+},
+"children": [
+20,
+23,
+25
+],
+"context": "vehicules",
+"id": 24,
+"objects": [],
+"parents": [
+21
+]
+},
+{
+"attributes": {
+"compact": "compact",
+"traction": "traction"
+},
+"children": [
+18,
+23
+],
+"context": "vehicules",
+"id": 14,
+"objects": [],
+"parents": [
+21
+]
+},
+{
+"attributes": {
+"sport": "sport"
+},
+"children": [
+17,
+20
+],
+"context": "vehicules",
+"id": 15,
+"objects": [],
+"parents": [
+26
+]
+},
+{
+"attributes": {
+"hybrid": "hybrid"
+},
+"children": [
+16,
+18
+],
+"context": "vehicules",
+"id": 19,
+"objects": [],
+"parents": [
+21,
+22
+]
+},
+{
+"attributes": {
+"four-wheel-drive": "four-wheel-drive"
+},
+"children": [],
+"context": "vehicules",
+"id": 25,
+"objects": [
+"jeep-wrangler",
+"land-rover-defender"
+],
+"parents": [
+24
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "vehicules",
+"id": 23,
+"objects": [
+"toyota-corolla",
+"honda-cr-v",
+"golkswagen-golf"
+],
+"parents": [
+14,
+24
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "vehicules",
+"id": 20,
+"objects": [
+"ford-mustang",
+"porsche-911"
+],
+"parents": [
+15,
+24
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "vehicules",
+"id": 18,
+"objects": [
+"toyota-prius"
+],
+"parents": [
+14,
+19
+]
+},
+{
+"attributes": {
+"autopilot": "autopilot"
+},
+"children": [],
+"context": "vehicules",
+"id": 17,
+"objects": [
+"tesla-model-3"
+],
+"parents": [
+15,
+22
+]
+},
+{
+"attributes": {
+"suv": "suv"
+},
+"children": [],
+"context": "vehicules",
+"id": 16,
+"objects": [
+"toyota-rav4-hybrid"
+],
+"parents": [
+19,
+26
+]
+}
+]

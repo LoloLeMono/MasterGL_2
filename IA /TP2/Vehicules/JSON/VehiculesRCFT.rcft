@@ -1,0 +1,13 @@
+FormalContext vehicules
+||compact|sport|suv|autopilot|hybrid|essence|electric|automatic|manual|traction|four-wheel-drive|propulsion|
+|toyota-corolla|x|||||x|||x|x|||
+|ford-mustang||x||||x|||x|||x|
+|honda-cr-v|x|||||x|||x|x|||
+|tesla-model-3||x||x|||x|x||||x|
+|toyota-prius|x||||x|x|x|x||x|||
+|golkswagen-golf|x|||||x|||x|x|||
+|porsche-911||x||||x|||x|||x|
+|jeep-wrangler||||||x|||x||x||
+|toyota-rav4-hybrid|||x||x|x|x|x||||x|
+|land-rover-defender||||||x|||x||x||
+

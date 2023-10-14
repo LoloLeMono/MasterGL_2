@@ -1,0 +1,5 @@
+<2> quatre-roues-motrices => essence,manuel
+<2> essence,manuel,propulsion => sport
+<2> essence,électrique,automatique => hybride
+<2> hybride => essence,électrique,automatique
+<2> sport,essence,propulsion => manuel

@@ -1,0 +1,4 @@
+<0> hybride,essence,électrique,automatique,manuel => compact,sport,SUV,autopilot,traction,quatre-roues-motrices,propulsion
+<0> sport,essence,manuel,quatre-roues-motrices,propulsion => compact,SUV,autopilot,hybride,électrique,automatique,traction
+<0> compact,essence,traction,propulsion => sport,SUV,autopilot,hybride,électrique,automatique,manuel,quatre-roues-motrices
+<0> compact,essence,manuel,traction,quatre-roues-motrices => sport,SUV,autopilot,hybride,électrique,automatique,propulsion
