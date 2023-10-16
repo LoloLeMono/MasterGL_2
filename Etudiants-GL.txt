@@ -5,11 +5,11 @@
 "maxime bourret" <maxime.bourret@etu.umontpellier.fr>
 "ahmed braham01" <ahmed.braham01@etu.umontpellier.fr>
 "arnaud cossu" <arnaud.cossu@etu.umontpellier.fr>
-"Allan Crista" <allan.crista@etu.umontpellier.fr>
+"allan crista" <allan.crista@etu.umontpellier.fr>
 "david eftimov" <david.eftimov@etu.umontpellier.fr>
 "matthieu grimaud" <matthieu.grimaud@etu.umontpellier.fr>
 "el-hadji-ahmadou gueye" <el-hadji-ahmadou.gueye@etu.umontpellier.fr>
-"Guillaume Hakenholz" <guillaume.hakenholz@etu.umontpellier.fr>
+"guillaume hakenholz" <guillaume.hakenholz@etu.umontpellier.fr>
 "nathan henry" <nathan.henry@etu.umontpellier.fr>
 "robin lhuillier" <robin.lhuillier@etu.umontpellier.fr>
 "issam lousra01" <issam.lousra01@etu.umontpellier.fr>
@@ -23,9 +23,9 @@
 "souhaib ramdane" <souhaib.ramdane@etu.umontpellier.fr>
 "hamid ramdani" <hamid.ramdani@etu.umontpellier.fr>
 "yoann reyne" <yoann.reyne@etu.umontpellier.fr>
-"Lucas Rouquairol" <lucas.rouquairol@etu.umontpellier.fr>
-"Adam Said" <adam.said@etu.umontpellier.fr>
-"Arthur Sapin" <arthur.sapin@etu.umontpellier.fr>
+"lucas rouquairol" <lucas.rouquairol@etu.umontpellier.fr>
+"adam said" <adam.said@etu.umontpellier.fr>
+"arthur sapin" <arthur.sapin@etu.umontpellier.fr>
 "tom simula" <tom.simula@etu.umontpellier.fr>
 "sihem taguelmimt" <sihem.taguelmimt@etu.umontpellier.fr>
 "benjamin urena" <benjamin.urena@etu.umontpellier.fr>
