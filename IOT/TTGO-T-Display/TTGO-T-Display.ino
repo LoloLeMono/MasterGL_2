@@ -23,6 +23,7 @@
 #define TFT_BL          4  // Display backlight control pin
 #define ADC_EN          14
 #define ADC_PIN         34
+#define ADC_LED         33
 #define BUTTON_1        35
 #define BUTTON_2        0
 
@@ -127,6 +128,8 @@ void wifi_scan()
 
 void setup()
 {
+  pinMode(ADC_LED, OUTPUT); // Configure la broche comme une sortie
+  digitalWrite(ADC_LED, HIGH); // Allume la LED
     Serial.begin(115200);
     Serial.println("Start");
     tft.init();

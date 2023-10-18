@@ -176,8 +176,6 @@ void setup()
     }
 }
 
-
-
 void loop()
 {
     if (btnCick) {
