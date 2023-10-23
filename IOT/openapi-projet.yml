@@ -1,0 +1,79 @@
+openapi: 3.0.0
+info:
+  title: Project HAI912I API TTGO T-Display
+  description: API for managing temperature and light sensors and controlling LED on TTGO T-Display
+  version: 1.0.0
+
+paths:
+  /sensors:
+    get:
+      summary: List Sensors
+      description: Retrieve a list of connected sensors.
+      responses:
+        200:
+          description: List of sensors
+          content:
+            application/json:
+              example:
+                sensors:
+                  - name: Temperature Sensor
+                  - name: Light Sensor
+
+  /sensors/{sensor_id}:
+    parameters:
+      - name: sensor_id
+        in: path
+        required: true
+        description: ID of the sensor
+        schema:
+          type: string
+    get:
+      summary: Get Sensor Info
+      description: Retrieve information for a specific sensor.
+      responses:
+        200:
+          description: Sensor information
+          content:
+            application/json:
+              example:
+                name: Temperature Sensor
+                value: 25.5 °C
+
+  /led:
+    post:
+      summary: Control LED
+      description: Turn the LED on or off.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                state:
+                  type: string
+                  enum: [on, off]
+      responses:
+        200:
+          description: LED state updated
+        400:
+          description: Invalid request
+
+  /threshold:
+    post:
+      summary: Set Threshold
+      description: Set the threshold for the LED based on sensor values.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                sensor_id:
+                  type: string
+                threshold:
+                  type: number
+      responses:
+        200:
+          description: Threshold set
+        400:
+          description: Invalid request

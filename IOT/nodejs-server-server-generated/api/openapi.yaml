@@ -1,0 +1,122 @@
+openapi: 3.0.0
+info:
+  title: Project HAI912I API TTGO T-Display
+  description: API for managing temperature and light sensors and controlling LED
+    on TTGO T-Display
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /sensors:
+    get:
+      summary: List Sensors
+      description: Retrieve a list of connected sensors.
+      operationId: sensorsGET
+      responses:
+        "200":
+          description: List of sensors
+          content:
+            application/json:
+              example:
+                sensors:
+                - name: Temperature Sensor
+                - name: Light Sensor
+      x-swagger-router-controller: Default
+  /sensors/{sensor_id}:
+    get:
+      summary: Get Sensor Info
+      description: Retrieve information for a specific sensor.
+      operationId: sensorsSensor_idGET
+      parameters:
+      - name: sensor_id
+        in: path
+        description: ID of the sensor
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Sensor information
+          content:
+            application/json:
+              example:
+                name: Temperature Sensor
+                value: 25.5 °C
+      x-swagger-router-controller: Default
+  /led:
+    post:
+      summary: Control LED
+      description: Turn the LED on or off.
+      operationId: ledPOST
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/led_body'
+      responses:
+        "200":
+          description: LED state updated
+        "400":
+          description: Invalid request
+      x-swagger-router-controller: Default
+  /threshold:
+    post:
+      summary: Set Threshold
+      description: Set the threshold for the LED based on sensor values.
+      operationId: thresholdPOST
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/threshold_body'
+      responses:
+        "200":
+          description: Threshold set
+        "400":
+          description: Invalid request
+      x-swagger-router-controller: Default
+  /stop_infos:
+    post:
+      summary: Set stop infos
+      description: Set the names of the stop and the terminus of the line and the
+        line number.
+      operationId: stop_infosPOST
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/stop_infos_body'
+      responses:
+        "200":
+          description: Stop bus infos updated
+        "400":
+          description: Invalid request
+      x-swagger-router-controller: Default
+components:
+  schemas:
+    led_body:
+      type: object
+      properties:
+        state:
+          type: string
+          enum:
+          - "on"
+          - "off"
+    threshold_body:
+      type: object
+      properties:
+        sensor_id:
+          type: string
+        threshold:
+          type: number
+    stop_infos_body:
+      type: object
+      properties:
+        stop_name:
+          type: string
+        terminus_name:
+          type: string
+        line:
+          type: integer
