@@ -1,3 +1,6 @@
+// #define WIFI_SSID "Bbox-46D5F041"
+// #define WIFI_PASSWORD "sdS7RDTR33awhGKHAT"
+
 #include <WiFi.h>
 #include <WebServer.h>
 #include "model.h"
