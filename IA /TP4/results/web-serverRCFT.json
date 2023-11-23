@@ -1,0 +1,106 @@
+[
+{
+"attributes": {
+"exist_web_server2OS": {
+"concepts": [
+2
+],
+"operator": "exist",
+"relation": "web_server2OS",
+"target": "OS"
+}
+},
+"children": [
+4
+],
+"context": "web_server",
+"id": 1,
+"objects": [
+"HFS"
+],
+"parents": []
+},
+{
+"attributes": {
+"exist_web_server2security": {
+"concepts": [
+3
+],
+"operator": "exist",
+"relation": "web_server2security",
+"target": "security"
+}
+},
+"children": [],
+"context": "web_server",
+"id": 4,
+"objects": [
+"AOLserver",
+"Apache_HTTP_Server",
+"Apache_Tomcat",
+"Boa",
+"Caucho_Resin_Server",
+"Caudium",
+"Cherokee_HTTP_Server",
+"Hiawatha_HTTP_Server",
+"IBM_HTTP_Server",
+"Internet_Information_Services",
+"Jexus",
+"lighttpd",
+"LiteSpeed_Web_Server",
+"Mongoose",
+"NaviServer",
+"nginx",
+"Oracle_HTTP_Server",
+"Oracle_iPlanet_Web_Server",
+"Saetta_Web_Server",
+"thttpd",
+"TUX_web_server",
+"Wakanda_Server",
+"Xitami",
+"Yaws"
+],
+"parents": [
+1
+]
+},
+{
+"attributes": {},
+"children": [],
+"context": "OS",
+"id": 2,
+"objects": [
+"Windows",
+"Linux",
+"OS_X",
+"BSD",
+"Solaris",
+"eComStation",
+"OpenVMS",
+"AIX",
+"IBM_i",
+"z\/OS",
+"HP-UX"
+],
+"parents": []
+},
+{
+"attributes": {},
+"children": [],
+"context": "security",
+"id": 3,
+"objects": [
+"CGI",
+"FCGI",
+"SCGI",
+"WSGI",
+"Java_Servlets",
+"SSI",
+"ISAPI",
+"SSJS",
+"Administration_console",
+"IPv6"
+],
+"parents": []
+}
+]

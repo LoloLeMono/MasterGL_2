@@ -1,0 +1,17 @@
+digraph G { 
+	rankdir=BT;
+subgraph web_server { 
+label="web_server";
+1 [shape=record,label="{Concept_web_server_1|exist_web_server2OS(C_OS_2)\n|HFS\n}"];
+4 [shape=record,label="{Concept_web_server_4|exist_web_server2security(C_security_3)\n|AOLserver\nApache_HTTP_Server\nApache_Tomcat\nBoa\nCaucho_Resin_Server\nCaudium\nCherokee_HTTP_Server\nHiawatha_HTTP_Server\nIBM_HTTP_Server\nInternet_Information_Services\nJexus\nlighttpd\nLiteSpeed_Web_Server\nMongoose\nNaviServer\nnginx\nOracle_HTTP_Server\nOracle_iPlanet_Web_Server\nSaetta_Web_Server\nthttpd\nTUX_web_server\nWakanda_Server\nXitami\nYaws\n}"];
+	4 -> 1
+}
+subgraph OS { 
+label="OS";
+2 [shape=record,label="{Concept_OS_2||Windows\nLinux\nOS_X\nBSD\nSolaris\neComStation\nOpenVMS\nAIX\nIBM_i\nz/OS\nHP-UX\n}"];
+}
+subgraph security { 
+label="security";
+3 [shape=record,label="{Concept_security_3||CGI\nFCGI\nSCGI\nWSGI\nJava_Servlets\nSSI\nISAPI\nSSJS\nAdministration_console\nIPv6\n}"];
+}
+}

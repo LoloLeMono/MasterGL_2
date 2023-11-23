@@ -1,0 +1,117 @@
+FormalContext web_server
+||
+|AOLserver|
+|Apache_HTTP_Server|
+|Apache_Tomcat|
+|Boa|
+|Caucho_Resin_Server|
+|Caudium|
+|Cherokee_HTTP_Server|
+|HFS|
+|Hiawatha_HTTP_Server|
+|IBM_HTTP_Server|
+|Internet_Information_Services|
+|Jexus|
+|lighttpd|
+|LiteSpeed_Web_Server|
+|Mongoose|
+|NaviServer|
+|nginx|
+|Oracle_HTTP_Server|
+|Oracle_iPlanet_Web_Server|
+|Saetta_Web_Server|
+|thttpd|
+|TUX_web_server|
+|Wakanda_Server|
+|Xitami|
+|Yaws|
+
+FormalContext OS
+||
+|Windows|
+|Linux|
+|OS_X|
+|BSD|
+|Solaris|
+|eComStation|
+|OpenVMS|
+|AIX|
+|IBM_i|
+|z/OS|
+|HP-UX|
+
+FormalContext security
+||
+|CGI|
+|FCGI|
+|SCGI|
+|WSGI|
+|Java_Servlets|
+|SSI|
+|ISAPI|
+|SSJS|
+|Administration_console|
+|IPv6|
+
+RelationalContext web_server2security
+source web_server
+target security
+scaling exist
+||CGI|FCGI|SCGI|WSGI|Java_Servlets|SSI|ISAPI|SSJS|Administration_console|IPv6|
+|AOLserver|x|||||x|||||
+|Apache_HTTP_Server|x|x|x|x||x|x||x|x|
+|Apache_Tomcat|x||||x|x|||x|x|
+|Boa|x|||||||||x|
+|Caucho_Resin_Server|x|x|||x|x|||x|x|
+|Caudium|x|x|||x|x|||x|x|
+|Cherokee_HTTP_Server|x|x|x|x||x|||x|x|
+|HFS|||||||||||
+|Hiawatha_HTTP_Server|x|x||||x|||x|x|
+|IBM_HTTP_Server|x|x||||x|||x|x|
+|Internet_Information_Services|x|x|x|||x|x|x|x|x|
+|Jexus||x||||||x|x||
+|lighttpd|x|x|x|||x||||x|
+|LiteSpeed_Web_Server|x|x||||x|||x|x|
+|Mongoose|x|||||x|||x|x|
+|NaviServer|x||||||||x||
+|nginx||x|x|x||x|||x|x|
+|Oracle_HTTP_Server|x|x||||x|||x|x|
+|Oracle_iPlanet_Web_Server|x|x|||x|x||x|x|x|
+|Saetta_Web_Server|x|||||||||x|
+|thttpd|x|||||||||x|
+|TUX_web_server|x||||||||||
+|Wakanda_Server||||||||x|x|x|
+|Xitami|x|||||x|||||
+|Yaws|x|x||||x||||x|
+
+RelationalContext web_server2OS
+source web_server
+target OS
+scaling exist
+||Windows|Linux|OS_X|BSD|Solaris|eComStation|OpenVMS|AIX|IBM_i|z/OS|HP-UX|
+|AOLserver|x|x|x|x|x|||||||
+|Apache_HTTP_Server|x|x|x|x|x|x|x|x|x|x|x|
+|Apache_Tomcat|x|x|x|x|x||x|x|x|x|x|
+|Boa||x||x||||||||
+|Caucho_Resin_Server|x|x|x|x|x|x|x|x|x|x|x|
+|Caudium||x|x|x|x|||x||||
+|Cherokee_HTTP_Server||x|x|x|x|||||||
+|HFS|x|||||||||||
+|Hiawatha_HTTP_Server|x|x|x|x|x|||||||
+|IBM_HTTP_Server|x|x|||x|||x|x|x|x|
+|Internet_Information_Services|x|||||||||||
+|Jexus||x||x||||||||
+|lighttpd|x|x|x|x|x|||x|||x|
+|LiteSpeed_Web_Server||x|x|x|x|||||||
+|Mongoose|x|x|x|x|x||x|x|x||x|
+|NaviServer|x|x|||x|||x||||
+|nginx|x|x|x|x|x|||x|||x|
+|Oracle_HTTP_Server|x|x|||x|||x||||
+|Oracle_iPlanet_Web_Server|x|x|||x|||x|||x|
+|Saetta_Web_Server||x||x||||||||
+|thttpd|x|x|x|x|x|||||||
+|TUX_web_server||x||||||||||
+|Wakanda_Server|x|x|x|x||||||||
+|Xitami|x|x|x|x|x|x|x|x|||x|
+|Yaws|x|x|x|x|x|||x||||
+

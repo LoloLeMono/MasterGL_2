@@ -1,0 +1,13 @@
+web_server: step=1 nb.concepts=1 nb.attrib rel.=0
+OS: step=1 nb.concepts=1 nb.attrib rel.=0
+security: step=1 nb.concepts=1 nb.attrib rel.=0
+time:24 ms
+web_server: step=2 nb.concepts=2 nb.attrib rel.=2
+OS: step=2 nb.concepts=1 nb.attrib rel.=0
+security: step=2 nb.concepts=1 nb.attrib rel.=0
+time:5 ms
+web_server: step=3 nb.concepts=2 nb.attrib rel.=2
+OS: step=3 nb.concepts=1 nb.attrib rel.=0
+security: step=3 nb.concepts=1 nb.attrib rel.=0
+time:1 ms
+total time: 47
