@@ -27,18 +27,18 @@ FormalContext web_server
 |Yaws|
 
 FormalContext OS
-||
-|Windows|
-|Linux|
-|OS_X|
-|BSD|
-|Solaris|
-|eComStation|
-|OpenVMS|
-|AIX|
-|IBM_i|
-|z/OS|
-|HP-UX|
+||exFAT|NTFS|APFS|ext4|ZFS|
+|Windows|x|x||||
+|Linux|x|x||x|x|
+|OS_X|x|x|x|||
+|BSD|||||x|
+|Solaris|||||x|
+|eComStation||||||
+|OpenVMS||||||
+|AIX||||||
+|IBM_i||||||
+|z/OS||||||
+|HP-UX||||||
 
 FormalContext security
 ||

@@ -2,16 +2,34 @@ digraph G {
 	rankdir=BT;
 subgraph web_server { 
 label="web_server";
-1 [shape=record,label="{Concept_web_server_1|exist_web_server2OS(C_OS_2)\n|HFS\n}"];
-4 [shape=record,label="{Concept_web_server_4|exist_web_server2security(C_security_3)\n|AOLserver\nApache_HTTP_Server\nApache_Tomcat\nBoa\nCaucho_Resin_Server\nCaudium\nCherokee_HTTP_Server\nHiawatha_HTTP_Server\nIBM_HTTP_Server\nInternet_Information_Services\nJexus\nlighttpd\nLiteSpeed_Web_Server\nMongoose\nNaviServer\nnginx\nOracle_HTTP_Server\nOracle_iPlanet_Web_Server\nSaetta_Web_Server\nthttpd\nTUX_web_server\nWakanda_Server\nXitami\nYaws\n}"];
-	4 -> 1
+1 [shape=record,label="{Concept_web_server_1|exist_web_server2OS(C_OS_6)\nexist_web_server2OS(C_OS_7)\n|HFS\n}"];
+13 [shape=record,label="{Concept_web_server_13|exist_web_server2security(C_security_12)\n|Internet_Information_Services\n}"];
+14 [shape=record,label="{Concept_web_server_14|exist_web_server2OS(C_OS_8)\n|AOLserver\nApache_HTTP_Server\nApache_Tomcat\nCaucho_Resin_Server\nCaudium\nCherokee_HTTP_Server\nHiawatha_HTTP_Server\nlighttpd\nLiteSpeed_Web_Server\nMongoose\nnginx\nthttpd\nWakanda_Server\nXitami\nYaws\n}"];
+15 [shape=record,label="{Concept_web_server_15|exist_web_server2OS(C_OS_9)\n|}"];
+16 [shape=record,label="{Concept_web_server_16|exist_web_server2OS(C_OS_10)\nexist_web_server2OS(C_OS_11)\n|Boa\nIBM_HTTP_Server\nJexus\nNaviServer\nOracle_HTTP_Server\nOracle_iPlanet_Web_Server\nSaetta_Web_Server\nTUX_web_server\n}"];
+	13 -> 1
+	16 -> 13
+	15 -> 14
+	14 -> 16
 }
 subgraph OS { 
 label="OS";
-2 [shape=record,label="{Concept_OS_2||Windows\nLinux\nOS_X\nBSD\nSolaris\neComStation\nOpenVMS\nAIX\nIBM_i\nz/OS\nHP-UX\n}"];
+6 [shape=record,label="{Concept_OS_6||eComStation\nOpenVMS\nAIX\nIBM_i\nz/OS\nHP-UX\n}"];
+7 [shape=record,label="{Concept_OS_7|exFAT\nNTFS\n|Windows\n}"];
+8 [shape=record,label="{Concept_OS_8|APFS\n|OS_X\n}"];
+9 [shape=record,label="{Concept_OS_9||}"];
+10 [shape=record,label="{Concept_OS_10|ext4\n|Linux\n}"];
+11 [shape=record,label="{Concept_OS_11|ZFS\n|BSD\nSolaris\n}"];
+	7 -> 6
+	11 -> 6
+	8 -> 7
+	10 -> 7
+	9 -> 8
+	9 -> 10
+	10 -> 11
 }
 subgraph security { 
 label="security";
-3 [shape=record,label="{Concept_security_3||CGI\nFCGI\nSCGI\nWSGI\nJava_Servlets\nSSI\nISAPI\nSSJS\nAdministration_console\nIPv6\n}"];
+12 [shape=record,label="{Concept_security_12||CGI\nFCGI\nSCGI\nWSGI\nJava_Servlets\nSSI\nISAPI\nSSJS\nAdministration_console\nIPv6\n}"];
 }
 }

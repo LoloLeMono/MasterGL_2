@@ -1,1 +1,1 @@
-OS: step=2 nb.concepts=1 nb.attrib rel.=0
+OS: step=2 nb.concepts=6 nb.attrib rel.=0
