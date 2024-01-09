@@ -1,0 +1,377 @@
+%include <planning.emp>;
+%include <salles.emp>; 
+%include <enseignants.emp>; 
+%include <ues.emp>;
+
+//////////////////////
+/////// SALLE ////////
+//////////////////////
+
+Salle triolet_36_203: 
+batiment : 36 ; 
+campus : Triolet ; 
+numero : 203 ; 
+End.
+
+Salle triolet_36_205: 
+batiment : 36 ; 
+campus : Triolet ; 
+numero : 205 ; 
+End.
+
+Salle triolet_36_404: 
+batiment : 36 ; 
+campus : Triolet ; 
+numero : 404 ; 
+End.
+
+Salle medecine_3_3: 
+batiment : 3 ; 
+campus : FaculteMedecine ; 
+numero : 3 ; 
+End.
+
+//////////////////////////
+/////// ENSEIGNANT ///////
+//////////////////////////
+
+Enseignant tony_stark :
+nom : "Stark";
+prenom: "Tony";
+End.
+
+Enseignant eric_dupont :
+nom : "Durand";
+prenom: "Éric";
+End.
+
+Enseignant xavier_dupont :
+nom : "Dupont";
+prenom: "Xavier";
+End.
+
+Enseignant john_doe :
+nom : "Doe";
+prenom: "John";
+End.
+
+
+///////////////////
+/////// UE ////////
+///////////////////
+
+UE mathematique:
+nom : "Mathematiques";
+volumeHoraire: 4;
+End.
+
+UE anglais:
+nom : "Anglais";
+volumeHoraire : 5;
+End.
+
+UE informatique:
+nom : "Informatique";
+volumeHoraire : 2;
+End.
+
+UE francais:
+nom : "Français";
+volumeHoraire : 5;
+End.
+
+////////////////////
+/////// EDT ////////
+////////////////////
+
+EmploiDeTemps cinquieme_A:
+    AnneeAcademique : "2024"; 
+    Jours :
+        JourDeSemaine Lundi :
+        	DateJour: 05;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cours1:
+            		Enseignant: eric_dupont;
+            		Heure: 8;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+            	CreneauHoraire cours2:
+            		Enseignant: xavier_dupont;
+            		Heure: 9;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	CreneauHoraire cours3:
+            		Enseignant: xavier_dupont;
+            		Heure: 10;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	;
+        End.
+        JourDeSemaine Mardi :
+        	DateJour: 06;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cours1:
+            		Enseignant: eric_dupont;
+            		Heure: 8;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+            	CreneauHoraire cours1:
+            		Enseignant: eric_dupont;
+            		Heure: 9;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: francais;
+            	End.;
+        End.
+        JourDeSemaine Mercredi :
+        	DateJour: 07;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cours1:
+            		Enseignant: eric_dupont;
+            		Heure: 8;
+            		Salle: triolet_36_404;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+            	CreneauHoraire cours2:
+            		Enseignant: tony_stark;
+            		Heure: 9;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: informatique;
+            	End.
+            	CreneauHoraire cours2:
+            		Enseignant: tony_stark;
+            		Heure: 10;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: informatique;
+            	End.
+        	;
+        End.
+        JourFerie Jeudi :
+        	DateJour: 08;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            Event: "1945";
+        End.
+        JourDeSemaine Vendredi :
+        	DateJour: 09;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cours1:
+            		Enseignant: xavier_dupont;
+            		Heure: 14;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	CreneauHoraire cours2:
+            		Enseignant: xavier_dupont;
+            		Heure: 15;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	CreneauHoraire cours3:
+            		Enseignant: eric_dupont;
+            		Heure: 8;
+            		Salle: triolet_36_404;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+        	;
+        End.
+        JourDeSemaine Samedi :
+        	DateJour: 10;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :;
+        End.
+        JourDeSemaine Dimanche :
+        	DateJour: 11;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :;
+        End.
+    ;
+End.
+
+EmploiDeTemps cinquieme_B:
+	AnneeAcademique: "2024";
+	Jours:
+		JourDeSemaine Lundi:
+			DateJour: 05;
+			Mois: 05;
+			Annee: 2024;
+			
+			CreneauxHoraires:
+				CreneauHoraire cr:
+					Enseignant:xavier_dupont;
+					Heure:8;
+					Salle:triolet_36_205;
+					Type:Cours;
+					UE:mathematique;
+				End.
+				CreneauHoraire cr:
+					Enseignant:xavier_dupont;
+					Heure:14;
+					Salle:triolet_36_205;
+					Type:Cours;
+					UE:mathematique;
+				End.
+				CreneauHoraire cr:
+					Enseignant:john_doe;
+					Heure:15;
+					Salle:triolet_36_205;
+					Type:Cours;
+					UE:anglais;
+				End.
+				CreneauHoraire cr:
+					Enseignant:john_doe;
+					Heure:16;
+					Salle:triolet_36_205;
+					Type:Cours;
+					UE:anglais;
+				End.
+				CreneauHoraire cr:
+					Enseignant:eric_dupont;
+					Heure:17;
+					Salle:triolet_36_205;
+					Type:Cours;
+					UE:francais;
+				End.
+			;
+		End.
+		JourDeSemaine Mardi :
+        	DateJour: 06;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cr:
+            		Enseignant: tony_stark;
+            		Heure: 14;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	CreneauHoraire cr:
+            		Enseignant: tony_stark;
+            		Heure: 15;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: mathematique;
+            	End.
+            	CreneauHoraire cr:
+            		Enseignant: john_doe;
+            		Heure: 16;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: anglais;
+            	End.
+            	CreneauHoraire cr:
+            		Enseignant: eric_dupont;
+            		Heure: 17;
+            		Salle: triolet_36_404;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+        	;
+        End.
+        JourDeSemaine Mercredi :
+        	DateJour: 07;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cr:
+            		Enseignant: eric_dupont;
+            		Heure: 14;
+            		Salle: triolet_36_205;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+            	CreneauHoraire cr:
+            		Enseignant: john_doe;
+            		Heure: 15;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: anglais;
+            	End.
+            	CreneauHoraire cr:
+            		Enseignant: john_doe;
+            		Heure: 16;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: anglais;
+            	End.
+		CreneauHoraire cr:
+            		Enseignant: eric_dupont;
+            		Heure: 17;
+            		Salle: triolet_36_203;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+        	;
+        End.
+        JourFerie Jeudi :
+        	DateJour: 08;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            Event: "1945";
+        End.
+        JourDeSemaine Vendredi :
+        	DateJour: 09;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :
+            	CreneauHoraire cr:
+            		Enseignant: eric_dupont;
+            		Heure: 9;
+            		Salle: triolet_36_404;
+            		Type: Cours;
+            		UE: francais;
+            	End.
+        	;
+        End.
+        JourDeSemaine Samedi :
+        	DateJour: 10;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :;
+        End.
+        JourDeSemaine Dimanche :
+        	DateJour: 11;
+        	Mois: 05;
+        	Annee: 2024;
+        	
+            CreneauxHoraires :;
+        End.
+	;
+End.
